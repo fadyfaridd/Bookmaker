@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="fw-bold text-muted mt-3">Bookmarker</h2>
+    </div>
+    <div class="container text-center mt-3 p-4 border-secondary border-top border-bottom ">
+        <div class="bg-light p-5">
+            <h3 class="mb-4">Bookmark Your Favorite Sites</h3>
+            <label for="bookmarkName" class="fw-bold">Site name</label>
+            <input type="text" class="form-control my-2 w-75 m-auto" id="bookmarkName" oninput="validateSiteName()" placeholder="Ex: Google..">
+            <label for="websiteUrl" class="fw-bold">Site URL</label>
+            <input type="url" class="form-control my-2 w-75 m-auto" id="websiteUrl" oninput="validateSiteUrl()" placeholder="Website URL">
+            <button class="btn btn-primary" onclick="submitBtn()">Submit</button>
+        </div>
+        <div id="display">
+        </div>
+    </div>
+    <div class="container mt-4">
+        <p class="text-muted">© 2023 Bookmarker Inc.</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
